@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1067</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>半自动标注软件-服务端</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1051</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>服务器管理</string>
+    </attribute>
+    <widget class="QPushButton" name="startserverButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>630</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启动服务器后端并分发数据集</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="startModelButton">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>630</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>更新自动标注信息</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="statusLabel">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>630</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>当前服务器在线用户数：0</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="serverInfoList">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>1031</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="autoScrollMargin">
+      <number>1600</number>
+     </property>
+    </widget>
+    <widget class="QListView" name="modelInfoList">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>1031</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="autoScrollMargin">
+      <number>1600</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="renameButton">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>630</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="toolTipDuration">
+      <number>-5</number>
+     </property>
+     <property name="text">
+      <string>格式化命名数据集</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>用户数据管理</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
